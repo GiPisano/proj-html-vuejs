@@ -20,19 +20,18 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-.logo{
-    color: white;
-    width: 120px;
-}
-.search{
-    filter: brightness(0) invert(1);
-}
+@use '../styles/partials/variables.scss' as *;
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px 10px;
+}
+
+.logo{
+    color: white;
+    width: 120px;
 }
 
 .links{
@@ -41,8 +40,11 @@ header{
 }
 
 .link:hover{
-    color: #F2870C;
+    color: $orange-color;
 }
 
+.search{
+    filter: brightness(0) invert(1);
+}
 
 </style>
