@@ -4,7 +4,36 @@ import AppHeader from './components/AppHeader.vue';
 export default{
   data(){
     return{
-      title: 'proj html vuejs'
+      links:[
+        {
+          text: 'HOME',
+          active: false
+        },
+        {
+          text: 'BLOG',
+          active: false
+        },
+        {
+          text: 'HEVENTS',
+          active: false
+        },
+        {
+          text: 'GALLERY',
+          active: false
+        },
+        {
+          text: 'ABOUT US',
+          active: false
+        },
+        {
+          text: 'CONTACT US',
+          active: false
+        },
+        {
+          text: 'SHOP',
+          active: false
+        },
+      ],
     }
   },
   
@@ -15,8 +44,7 @@ export default{
 </script>
 
 <template>
-  <app-header></app-header>
-  <h1>{{ title }}</h1>
+  <app-header :links="links"></app-header>
 </template>
 
 <style lang="scss">
