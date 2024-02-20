@@ -1,5 +1,4 @@
 <script>
-
 import cardJazz from './CardJazz.vue';
 
 export default{

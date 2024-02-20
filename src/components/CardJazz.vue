@@ -27,14 +27,13 @@ export default{
 @use '../styles/partials/mixins.scss' as *;
 .col-card-jazz{
     
-    
     img{
         width: 100%;
     }
 
     .container-card{
-        max-width: 350px;
-        width: 100%;
+        max-width: 350px
+      
     }
 
     .stream{
