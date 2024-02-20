@@ -1,10 +1,12 @@
 <script>
 
+import cardJazz from './CardJazz.vue';
+
 export default{
     
     data(){
         return{
-            cards:[
+            cardsInfo:[
                 {
                     phat_svg: '/src/assets/svg/speaker.svg',
                     title: 'ORIGINAL IDEAS',
@@ -20,10 +22,39 @@ export default{
                     title: 'ACOUSTIC COVERS',
                     description: 'Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.'
                 },
-            ]
+            ],
+
+            cardsJazz:[
+                {
+                    phat_img: '/src/assets/img/gallery1.jpg',
+                    title: 'A ROLL AND BANG THE FLOOR',
+                },
+                {
+                    phat_img: '/src/assets/img/gallery2.jpg',
+                    title: 'YOUR MELODY TO OUR MUSIC',
+                },
+                {
+                    phat_img: '/src/assets/img/gallery3.jpg',
+                    title: 'TOUCHING HEAVEN ON FREQUENCY',
+                },
+                {
+                    phat_img: '/src/assets/img/gallery4.jpg',
+                    title: 'MUSIC MAKES STRONGE BEATS',
+                },
+                {
+                    phat_img: '/src/assets/img/gallery5.jpg',
+                    title: 'SOUND IS THE SPARK OF TIME',
+                },
+                {
+                    phat_img: '/src/assets/img/gallery6.jpg',
+                    title: 'MAKE YOUR NIGHT GROOVY',
+                },
+                
+            ],
         }
     },
 
+    components:{ cardJazz }
 
 }
 </script>
@@ -31,11 +62,11 @@ export default{
 <template>
     <div class="container text-center" id="jazz">
         <div class="row-card">
-            <div v-for="card in cards" class="col-card">
+            <div v-for="cardInfo in cardsInfo" class="col-card">
                 <div class="container-card">
-                    <img :src="card.phat_svg" class="svg" alt="">
-                    <p>{{ card.title }}</p>
-                    <p>{{ card.description }}</p>
+                    <img :src="cardInfo.phat_svg" class="svg" alt="">
+                    <p>{{ cardInfo.title }}</p>
+                    <p>{{ cardInfo.description }}</p>
                 </div>
             </div>
         </div>
@@ -57,12 +88,21 @@ export default{
         </div>
     </section>
 
+    <div class="container text-center" id="card-jazz">
+        <p class="orange">WHO WE ARE</p>
+        <p class="title">SENSE THE JAZZ</p>
+        <div class="row-card">
+            <card-jazz v-for="cardJazz in cardsJazz" :cardsJazz="cardJazz" ></card-jazz>
+        </div>
+    </div>
+    
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins.scss' as *;
 .row-card{
     @include flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -72,15 +112,20 @@ export default{
     padding-bottom: 10px;
 }
 
+.col-card{
+    .container-card{
+        background-color: rgb(15, 15, 15);
+        max-width: 350px;
+        width: 100%;
+        height: 300px;
+        padding: 10% ;
+        gap: 15px;
+    }
+}
 .container-card{
     @include flex;
     flex-direction: column;
-    gap: 15px;
-    background-color: rgb(15, 15, 15);
-    padding: 10% ;
-    max-width: 350px;
-    width: 100%;
-    height: 300px;
+    
 }
 
 .story-jazz{
@@ -110,4 +155,6 @@ export default{
         font-size: 70px;
     }
 }
+
+
 </style>
