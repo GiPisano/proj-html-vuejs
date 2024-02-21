@@ -73,7 +73,7 @@ export default{
         <div class="story-jazz">
             <p class="orange">WHO WE ARE</p>
             <p class="title">SENSE THE JAZZ</p>
-            <p>The Story Of Jazz And Blues Society Is The Story Of Determination, Passion, Idealism, Community, And Of Course, Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, National And International Music Communities.</p>
+            <p class="description">The Story Of Jazz And Blues Society Is The Story Of Determination, Passion, Idealism, Community, And Of Course, Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, National And International Music Communities.</p>
             <p class="button">READ MORE</p>
         </div>
     </div>
@@ -125,6 +125,11 @@ export default{
     gap: 10px;
     margin: 40px auto;
     max-width: 650px;
+
+    .description{
+        color: rgb(157, 157, 157);
+        font-size: 12px;
+    }
 }
 
 .title{

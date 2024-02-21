@@ -47,6 +47,18 @@ export default{
                     date: '07 May 2022',
                     description: 'Signs Your Car Battery Has To Be Replaced When The Dashboard Lights Start Flashing, This Is A Sign The Battery Is Dying. Several Issues Arise And',
                 },
+            ],
+
+            imagesGallery:[
+                '/src/assets/img/instagram_img4.jpg',
+                '/src/assets/img/instagram_img5.jpg',
+                '/src/assets/img/instagram_img6.jpg',
+                '/src/assets/img/instagram_img7.jpg',
+                '/src/assets/img/instagram_img8.jpg',
+                '/src/assets/img/instagram_img9.jpg',
+                '/src/assets/img/instagram_img10.jpg',
+                '/src/assets/img/instagram_img1.jpg',
+
             ]
         }
     },
@@ -75,6 +87,7 @@ export default{
         </div>
     </section>
 
+    <!-- info music -->
     <section class="info-music">
         <div class="container">
             <div class="row">
@@ -98,19 +111,25 @@ export default{
                 <div class="col-card" v-for="bestSong in bestSongs">
                     <div class="container-card">
                         <img :src="bestSong.img" alt="">
-                        <p>{{ bestSong.title }}</p>
+                        <p class="title-card">{{ bestSong.title }}</p>
                         <p class="orange">
                             <span><i class="fa-solid fa-calendar-days"></i></span>
                             {{ bestSong.date }}
                         </p>
-                        <p>{{ bestSong.description }}</p>
+                        <p class="description-card">{{ bestSong.description }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-
+    <section id="gallery">
+        <div class="row">
+            <div class="col-gallery" v-for="imageGallery in imagesGallery">
+                <img :src="imageGallery" alt="">
+            </div>
+        </div>
+    </section>
 
 </template>
 
@@ -118,6 +137,8 @@ export default{
 <!-- style -->
 <style lang="scss" scoped>
     @use '../styles/partials/mixins.scss' as *;
+
+    // video rock
     .img-video{
     position: relative;
         img{
@@ -141,7 +162,6 @@ export default{
     }
 
     // info music
-
     .info-music{
         background-image: url('/src/assets/img/counter_parallax.jpg');
         height: 400px;
@@ -169,8 +189,13 @@ export default{
 
         .container-card{
             max-width: 350px;
-            .orange{
-                font-size: 14px;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            
+            .orange,
+            .description-card{
+                font-size: 12px;
             }
         }
 
@@ -179,6 +204,32 @@ export default{
             font-weight: bold;
         }
 
+        .title-card{
+            font-weight: bold;
+        }
+
+        .description-card{
+            color: rgb(157, 157, 157);
+        }
         
     }
+
+    // gallery
+    #gallery{
+        img{
+            width: 100%;
+        }
+        .col-gallery{
+            display: flex;
+            width: calc(100% / 8);
+            padding: 100px 0;
+        }
+
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    
 </style>
