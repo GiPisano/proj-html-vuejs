@@ -99,11 +99,6 @@ export default{
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins.scss' as *;
-.row-card{
-    @include flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 .svg{
     filter: brightness(0) invert(1);
@@ -119,12 +114,9 @@ export default{
         height: 300px;
         padding: 10% ;
         gap: 15px;
+        @include flex;
+        flex-direction: column;
     }
-}
-.container-card{
-    @include flex;
-    flex-direction: column;
-    
 }
 
 .story-jazz{

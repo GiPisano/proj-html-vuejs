@@ -33,13 +33,11 @@ export default{
 
     .container-card{
         max-width: 350px
-      
     }
 
     .stream{
         @include flex;
         gap: 10px;
-
     }
 }
 </style>

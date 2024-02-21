@@ -5,7 +5,7 @@ import SectionJazz from './MainSectionJazz.vue';
 export default{
     data(){
         return{
-            infoMusic: [
+            infoSongs: [
                 {
                     svg: '/src/assets/svg/man.svg',
                     number: 163,
@@ -26,6 +26,27 @@ export default{
                     number: 163,
                     description: 'CONCERTS'
                 },
+            ],
+
+            bestSongs: [
+                {
+                    img: '/src/assets/img/hip_hop.jpg',
+                    title: 'HIP HOP WIRED TO DANCE MAKE',
+                    date: '06 November 2021',
+                    description: 'Driving Short Distances Music Is A Music Genre That Includes Traditional Folk Music And The Contemporary Genre That Evolved From The Former',
+                },
+                {
+                    img: '/src/assets/img/music_business.jpg',
+                    title: 'MUSIC BUSINESS WORLDWIDE',
+                    date: '27 May 2022',
+                    description: 'Accelerate Work And Drive Productivity The Beatles Experimentation And Creative Freedom Led Other Bands To Experiment In Various Ways As Well.',
+                },
+                {
+                    img: '/src/assets/img/giveaways_rock.jpg',
+                    title: 'GIVEAWAYS ROCK TO ALL',
+                    date: '07 May 2022',
+                    description: 'Signs Your Car Battery Has To Be Replaced When The Dashboard Lights Start Flashing, This Is A Sign The Battery Is Dying. Several Issues Arise And',
+                },
             ]
         }
     },
@@ -36,6 +57,8 @@ export default{
 }
 </script>
 
+
+<!-- html -->
 <template>
     <section-rock />
     <section-jazz />
@@ -55,16 +78,44 @@ export default{
     <section class="info-music">
         <div class="container">
             <div class="row">
-                <div class="col" v-for="info in infoMusic">
-                    <img :src="info.svg" alt="">
-                    <p>{{ info.number }}</p>
-                    <p>{{ info.description }}</p>
+                <div class="col" v-for="infoSong in infoSongs">
+                    <img :src="infoSong.svg" alt="">
+                    <p>{{ infoSong.number }}</p>
+                    <p>{{ infoSong.description }}</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- best music -->
+    <section id="best-music">
+        <div class="container">
+            <div class="text-center">
+                <p class="orange">MUSIC BLOG</p>
+                <p class="title">BEST MUSIC BLOG</p>
+            </div>
+            <div class="row-card">
+                <div class="col-card" v-for="bestSong in bestSongs">
+                    <div class="container-card">
+                        <img :src="bestSong.img" alt="">
+                        <p>{{ bestSong.title }}</p>
+                        <p class="orange">
+                            <span><i class="fa-solid fa-calendar-days"></i></span>
+                            {{ bestSong.date }}
+                        </p>
+                        <p>{{ bestSong.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
 </template>
 
+
+<!-- style -->
 <style lang="scss" scoped>
     @use '../styles/partials/mixins.scss' as *;
     .img-video{
@@ -108,5 +159,26 @@ export default{
                 height: 80px;
             }
         }
+    }
+
+    // best music
+    #best-music{
+        img{
+            width: 100%;
+        }
+
+        .container-card{
+            max-width: 350px;
+            .orange{
+                font-size: 14px;
+            }
+        }
+
+        .title{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        
     }
 </style>
