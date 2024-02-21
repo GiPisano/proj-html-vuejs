@@ -12,7 +12,7 @@ export default{
             <img src="../assets/img/logo.png" alt="logo" class="logo">
         </div>
         <div class="links">
-            <p v-for="link in links" class="link">{{ link.text }}</p>
+            <p v-for="link in links" class="link"><a href="#">{{ link.text }}</a></p>
             <img class="search" src="../assets/svg/search.svg" alt="">
         </div>
     </header>
@@ -37,10 +37,6 @@ header{
 .links{
     display: flex;
     gap: 10px;
-}
-
-.link:hover{
-    color: $orange-color;
 }
 
 .search{

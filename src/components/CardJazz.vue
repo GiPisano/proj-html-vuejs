@@ -25,6 +25,7 @@ export default{
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins.scss' as *;
+@use '../styles/partials/variables.scss' as *;
 .col-card-jazz{
     
     img{
@@ -38,6 +39,13 @@ export default{
     .stream{
         @include flex;
         gap: 10px;
+        font-size: 12px;
+        color: rgb(157, 157, 157);
+    }
+
+    .stream i:hover{
+        color: $orange-color;
+        cursor: pointer;
     }
 }
 </style>

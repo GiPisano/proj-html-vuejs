@@ -13,18 +13,18 @@ export default{
                 },
                 {
                     svg: '/src/assets/svg/rocket.svg',
-                    number: 163,
-                    description: 'CONCERTS'
+                    number: 145,
+                    description: 'HAPPY CLIENTS'
                 },
                 {
                     svg: '/src/assets/svg/trophy.svg',
-                    number: 163,
-                    description: 'CONCERTS'
+                    number: 72,
+                    description: 'MUSIC AWARDS'
                 },
                 {
                     svg: '/src/assets/svg/music.svg',
-                    number: 163,
-                    description: 'CONCERTS'
+                    number: 182,
+                    description: 'TOTAL SONGS'
                 },
             ],
 
@@ -93,8 +93,8 @@ export default{
             <div class="row">
                 <div class="col" v-for="infoSong in infoSongs">
                     <img :src="infoSong.svg" alt="">
-                    <p>{{ infoSong.number }}</p>
-                    <p>{{ infoSong.description }}</p>
+                    <p class="title">{{ infoSong.number }}</p>
+                    <p class="description">{{ infoSong.description }}</p>
                 </div>
             </div>
         </div>
@@ -122,7 +122,8 @@ export default{
             </div>
         </div>
     </section>
-    
+
+    <!-- gallery -->
     <section id="gallery">
         <div class="row">
             <div class="col-gallery" v-for="imageGallery in imagesGallery">
@@ -164,7 +165,7 @@ export default{
     // info music
     .info-music{
         background-image: url('/src/assets/img/counter_parallax.jpg');
-        height: 400px;
+        height: 350px;
         text-align: center;
         background-repeat: no-repeat;
         background-position: top;
@@ -176,13 +177,21 @@ export default{
             gap: 10px;
             img{
                 filter: brightness(0) invert(1);
-                height: 80px;
+                height: 60px;
+            }
+            .title{
+                font-size: 40px;
+            }
+
+            .description{
+                font-weight: bold;
             }
         }
     }
 
     // best music
     #best-music{
+        padding: 100px 0;
         img{
             width: 100%;
         }
@@ -202,6 +211,7 @@ export default{
         .title{
             font-size: 40px;
             font-weight: bold;
+            padding: 20px;
         }
 
         .title-card{
@@ -222,7 +232,7 @@ export default{
         .col-gallery{
             display: flex;
             width: calc(100% / 8);
-            padding: 100px 0;
+            padding: 0 0 100px 0;
         }
 
         .row{
@@ -231,5 +241,5 @@ export default{
         }
     }
 
-    
+
 </style>

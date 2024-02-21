@@ -22,7 +22,7 @@ p{
 }
 
 .button{
-    border: 1px solid $orange-color;
+    border: 1px solid rgb(121, 95, 79);
     padding: 10px 40px;
     width: auto;
 }
@@ -54,4 +54,17 @@ p{
     @include flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: $orange-color;
+}
+
+li{
+    list-style: none;
 }

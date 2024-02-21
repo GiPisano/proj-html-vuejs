@@ -59,6 +59,8 @@ export default{
 </script>
 
 <template>
+
+    <!-- Jazz -->
     <div class="container text-center" id="jazz">
         <div class="row-card">
             <div v-for="cardInfo in cardsInfo" class="col-card">
@@ -70,6 +72,7 @@ export default{
             </div>
         </div>
 
+        <!-- story jazz -->
         <div class="story-jazz">
             <p class="orange">WHO WE ARE</p>
             <p class="title">SENSE THE JAZZ</p>
@@ -78,7 +81,7 @@ export default{
         </div>
     </div>
 
-  
+    <!-- video -->
     <section class="img-video">
         <img src="../assets/img/Video.jpg" alt="">
         <div class="video">
@@ -87,6 +90,7 @@ export default{
         </div>
     </section>
 
+    <!-- cards jazz -->
     <div class="container text-center" id="card-jazz">
         <p class="orange">WHO WE ARE</p>
         <p class="title">SENSE THE JAZZ</p>
@@ -100,24 +104,30 @@ export default{
 <style lang="scss" scoped>
 @use '../styles/partials/mixins.scss' as *;
 
-.svg{
-    filter: brightness(0) invert(1);
-    max-height: 88px;
-    padding-bottom: 10px;
-}
+#jazz{
+    .svg{
+        filter: brightness(0) invert(1);
+        max-height: 88px;
+        padding-bottom: 10px;
+    }
 
-.col-card{
-    .container-card{
-        background-color: rgb(15, 15, 15);
-        max-width: 350px;
-        width: 100%;
-        height: 300px;
-        padding: 10% ;
-        gap: 15px;
-        @include flex;
-        flex-direction: column;
+    .col-card{
+        .container-card{
+            background-color: rgb(15, 15, 15);
+            max-width: 350px;
+            width: 100%;
+            height: 300px;
+            padding: 10% ;
+            gap: 15px;
+            @include flex;
+            flex-direction: column;
+        }
     }
 }
+
+
+
+
 
 .story-jazz{
     @include flex;
@@ -130,15 +140,15 @@ export default{
         color: rgb(157, 157, 157);
         font-size: 12px;
     }
+
+    .button{
+        margin-top: 10px;
+    }
 }
 
 .title{
     font-size: 40px;
     font-weight: bold;
-}
-
-.button{
-    margin-top: 10px;
 }
 
 .img-video{
@@ -149,6 +159,14 @@ export default{
 
     .orange{
         font-size: 70px;
+    }
+}
+
+#card-jazz{
+    padding: 100px 0;
+
+    .title{
+        padding: 20px;
     }
 }
 
