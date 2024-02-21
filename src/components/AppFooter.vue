@@ -133,12 +133,6 @@
 
   .footer{
 
-    .hr{
-        width: 100%;
-        margin: 0;
-        border: 0.2px solid rgb(157, 157, 157);
-    }
-
     p{
         padding: 20px;
     }

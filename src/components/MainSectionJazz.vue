@@ -65,7 +65,9 @@ export default{
         <div class="row-card">
             <div v-for="cardInfo in cardsInfo" class="col-card">
                 <div class="container-card">
-                    <img :src="cardInfo.phat_svg" class="svg" alt="">
+                    <div class="circle-svg">
+                        <img :src="cardInfo.phat_svg" class="svg" alt="">
+                    </div>
                     <p>{{ cardInfo.title }}</p>
                     <p>{{ cardInfo.description }}</p>
                 </div>
@@ -105,18 +107,30 @@ export default{
 @use '../styles/partials/mixins.scss' as *;
 
 #jazz{
-    .svg{
-        filter: brightness(0) invert(1);
-        max-height: 88px;
-        padding-bottom: 10px;
+
+    .circle-svg{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       
+        .svg{
+            filter: brightness(0) invert(1);
+            height: 88px;
+        }
     }
+
+    
 
     .col-card{
         .container-card{
             background-color: rgb(15, 15, 15);
             max-width: 350px;
             width: 100%;
-            height: 300px;
+            height: 350px;
             padding: 10% ;
             gap: 15px;
             @include flex;
@@ -126,6 +140,11 @@ export default{
 }
 
 
+.col-card:hover{
+    .circle-svg{
+        box-shadow: 0 0 0 5px rgba(255, 165, 0, 1); // Arancione
+    }
+}
 
 
 

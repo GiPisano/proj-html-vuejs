@@ -16,7 +16,8 @@ export default{
           active: false
         },
         {
-          text: 'HEVENTS',
+          text: 'EVENTS',
+          svg: '/src/assets/svg/dropdown.svg',
           active: false
         },
         {
