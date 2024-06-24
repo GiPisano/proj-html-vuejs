@@ -239,4 +239,27 @@ export default {
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .img-video {
+    .container {
+      .title {
+        font-size: 20px;
+      }
+      .orange {
+        font-size: 12px;
+      }
+    }
+  }
+  // info music
+  .info-music {
+    .col {
+      @include flex;
+      gap: 5px;
+      .title {
+        font-size: 20px;
+      }
+    }
+  }
+}
 </style>
