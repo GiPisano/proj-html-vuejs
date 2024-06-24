@@ -135,6 +135,9 @@
 
     p{
         padding: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(157, 157, 157);
     }
   }
     

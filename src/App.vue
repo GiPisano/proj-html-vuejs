@@ -1,51 +1,51 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
-export default{
-  data(){
-    return{
-      links:[
+export default {
+  data() {
+    return {
+      links: [
         {
-          text: 'HOME',
-          active: false
+          text: "HOME",
+          active: false,
         },
         {
-          text: 'BLOG',
-          active: false
+          text: "BLOG",
+          active: false,
         },
         {
-          text: 'EVENTS',
-          svg: '/src/assets/svg/dropdown.svg',
-          active: false
+          text: "EVENTS",
+          svg: "./src/assets/svg/dropdown.svg",
+          active: false,
         },
         {
-          text: 'GALLERY',
-          active: false
+          text: "GALLERY",
+          active: false,
         },
         {
-          text: 'ABOUT US',
-          active: false
+          text: "ABOUT US",
+          active: false,
         },
         {
-          text: 'CONTACT US',
-          active: false
+          text: "CONTACT US",
+          active: false,
         },
         {
-          text: 'SHOP',
-          active: false
+          text: "SHOP",
+          active: false,
         },
       ],
-    }
+    };
   },
-  
-  components:{
+
+  components: {
     AppHeader,
     AppMain,
     AppFooter,
-},
-}
+  },
+};
 </script>
 
 <template>
@@ -55,6 +55,5 @@ export default{
 </template>
 
 <style lang="scss">
-@use './styles/general.scss';
-
+@use "./styles/general.scss";
 </style>
