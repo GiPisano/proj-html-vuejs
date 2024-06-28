@@ -4,7 +4,7 @@ export default {};
 
 <template>
   <section id="rock">
-    <img src="../assets/img/imageVideo.png" alt="" />
+    <img src="/img/imageVideo.png" alt="" />
     <div class="video">
       <p class="orange">INSTRUMENTAL ROCK</p>
       <p class="info">MUSIC IN THIS VIDEO</p>

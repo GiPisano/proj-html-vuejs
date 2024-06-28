@@ -6,19 +6,19 @@ export default {
     return {
       cardsInfo: [
         {
-          phat_svg: "../assets/svg/speaker.svg",
+          phat_svg: "./svg/speaker.svg",
           title: "ORIGINAL IDEAS",
           description:
             "Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.",
         },
         {
-          phat_svg: "../assets/svg/disc.svg",
+          phat_svg: "./svg/disc.svg",
           title: "MUSIC STUDIO",
           description:
             "Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.",
         },
         {
-          phat_svg: "../assets/svg/headphones.svg",
+          phat_svg: "./svg/headphones.svg",
           title: "ACOUSTIC COVERS",
           description:
             "Contrary Popular Belief, Lorem Ipsum Not Simply Ipsum Random Text.",
@@ -27,27 +27,27 @@ export default {
 
       cardsJazz: [
         {
-          phat_img: "../assets/img/gallery1.jpg",
+          phat_img: "./img/gallery1.jpg",
           title: "A ROLL AND BANG THE FLOOR",
         },
         {
-          phat_img: "../assets/img/gallery2.jpg",
+          phat_img: "./img/gallery2.jpg",
           title: "YOUR MELODY TO OUR MUSIC",
         },
         {
-          phat_img: "../assets/img/gallery3.jpg",
+          phat_img: "./img/gallery3.jpg",
           title: "TOUCHING HEAVEN ON FREQUENCY",
         },
         {
-          phat_img: "../assets/img/gallery4.jpg",
+          phat_img: "./img/gallery4.jpg",
           title: "MUSIC MAKES STRONGE BEATS",
         },
         {
-          phat_img: "../assets/img/gallery5.jpg",
+          phat_img: "./img/gallery5.jpg",
           title: "SOUND IS THE SPARK OF TIME",
         },
         {
-          phat_img: "../assets/img/gallery6.jpg",
+          phat_img: "./img/gallery6.jpg",
           title: "MAKE YOUR NIGHT GROOVY",
         },
       ],
@@ -92,7 +92,7 @@ export default {
 
   <!-- video -->
   <section class="img-video">
-    <img src="../assets/img/Video.jpg" alt="" />
+    <img src="/img/Video.jpg" alt="" />
     <div class="video">
       <i class="fa-regular fa-circle-play orange"></i>
       <p class="title">NEW MUSIC VIDEO</p>

@@ -7,22 +7,22 @@ export default {
     return {
       infoSongs: [
         {
-          svg: "./src/assets/svg/man.svg",
+          svg: "./svg/man.svg",
           number: 163,
-          description: "CONCERTS",
+          description: "ALL CONCERTS",
         },
         {
-          svg: "./src/assets/svg/rocket.svg",
+          svg: "./svg/rocket.svg",
           number: 145,
           description: "HAPPY CLIENTS",
         },
         {
-          svg: "./src/assets/svg/trophy.svg",
+          svg: "./svg/trophy.svg",
           number: 72,
           description: "MUSIC AWARDS",
         },
         {
-          svg: "./src/assets/svg/music.svg",
+          svg: "./svg/music.svg",
           number: 182,
           description: "TOTAL SONGS",
         },
@@ -30,21 +30,21 @@ export default {
 
       bestSongs: [
         {
-          img: "./src/assets/img/hip_hop.jpg",
+          img: "./img/hip_hop.jpg",
           title: "HIP HOP WIRED TO DANCE MAKE",
           date: "06 November 2021",
           description:
             "Driving Short Distances Music Is A Music Genre That Includes Traditional Folk Music And The Contemporary Genre That Evolved From The Former",
         },
         {
-          img: "./src/assets/img/music_business.jpg",
+          img: "./img/music_business.jpg",
           title: "MUSIC BUSINESS WORLDWIDE",
           date: "27 May 2022",
           description:
             "Accelerate Work And Drive Productivity The Beatles Experimentation And Creative Freedom Led Other Bands To Experiment In Various Ways As Well.",
         },
         {
-          img: "./src/assets/img/giveaways_rock.jpg",
+          img: "./img/giveaways_rock.jpg",
           title: "GIVEAWAYS ROCK TO ALL",
           date: "07 May 2022",
           description:
@@ -53,14 +53,14 @@ export default {
       ],
 
       imagesGallery: [
-        "./src/assets/img/instagram_img4.jpg",
-        "./src/assets/img/instagram_img5.jpg",
-        "./src/assets/img/instagram_img6.jpg",
-        "./src/assets/img/instagram_img7.jpg",
-        "./src/assets/img/instagram_img8.jpg",
-        "./src/assets/img/instagram_img9.jpg",
-        "./src/assets/img/instagram_img10.jpg",
-        "./src/assets/img/instagram_img1.jpg",
+        "./img/instagram_img4.jpg",
+        "./img/instagram_img5.jpg",
+        "./img/instagram_img6.jpg",
+        "./img/instagram_img7.jpg",
+        "./img/instagram_img8.jpg",
+        "./img/instagram_img9.jpg",
+        "./img/instagram_img10.jpg",
+        "./img/instagram_img1.jpg",
       ],
     };
   },
@@ -79,7 +79,7 @@ export default {
 
   <!-- video rock -->
   <section class="img-video">
-    <img src="/src/assets/img/cms_parallax.jpg" alt="" />
+    <img src="/img/cms_parallax.jpg" alt="" />
     <div class="container">
       <div class="video-rock">
         <p class="orange">INSTRUMENTAL ROCK</p>
@@ -164,7 +164,7 @@ export default {
 
 // info music
 .info-music {
-  background-image: url("/src/assets/img/counter_parallax.jpg");
+  background-image: url("./img/counter_parallax.jpg");
   height: 350px;
   text-align: center;
   background-repeat: no-repeat;

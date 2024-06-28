@@ -13,7 +13,7 @@ export default {
       links: [
         { text: "HOME", svg: null },
         { text: "BLOG", svg: null },
-        { text: "EVENTS", svg: "./src/assets/svg/dropdown.svg" },
+        { text: "EVENTS", svg: "./svg/dropdown.svg" },
         { text: "GALLERY", svg: null },
         { text: "ABOUT US", svg: null },
         { text: "CONTACT US", svg: null },
@@ -35,7 +35,7 @@ export default {
 <template>
   <header>
     <div class="logo-wrapper">
-      <img src="../assets/img/logo.png" alt="logo" class="logo" />
+      <img src="/img/Logo.png" alt="logo" class="logo" />
     </div>
     <nav class="desktop-nav">
       <div class="links">
@@ -54,7 +54,7 @@ export default {
             </span>
           </p>
         </div>
-        <img class="search" src="../assets/svg/search.svg" alt="" />
+        <img class="search" src="/svg/search.svg" alt="" />
       </div>
     </nav>
     <button class="hamburger" @click="toggleMenu">
@@ -77,7 +77,7 @@ export default {
             </span>
           </p>
         </div>
-        <img class="search" src="../assets/svg/search.svg" alt="" />
+        <img class="search" src="/svg/search.svg" alt="" />
       </div>
       <div class="close" @click="closeMenu()">X</div>
     </nav>
