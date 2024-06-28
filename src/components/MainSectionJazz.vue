@@ -100,7 +100,7 @@ export default {
   </section>
 
   <!-- cards jazz -->
-  <div class="container text-center" id="card-jazz">
+  <div class="container text-center cards-jazz" id="card-jazz">
     <p class="orange">WHO WE ARE</p>
     <p class="title">SENSE THE JAZZ</p>
     <div class="row-card">
@@ -116,6 +116,7 @@ export default {
 @use "../styles/partials/mixins.scss" as *;
 
 #jazz {
+  margin: 40px auto;
   .circle-svg {
     width: 120px;
     height: 120px;
