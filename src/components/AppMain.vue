@@ -90,17 +90,20 @@ export default {
   </section>
 
   <!-- info music -->
-  <section class="info-music">
+  <div class="img-info-music">
+    <img src="/img/counter_parallax.jpg" class="img-background" alt="" />
     <div class="container">
-      <div class="row">
-        <div class="col" v-for="infoSong in infoSongs">
-          <img :src="infoSong.svg" alt="" />
-          <p class="title">{{ infoSong.number }}</p>
-          <p class="description">{{ infoSong.description }}</p>
+      <section class="info-music">
+        <div class="row">
+          <div class="col" v-for="infoSong in infoSongs">
+            <img :src="infoSong.svg" alt="" />
+            <p class="title">{{ infoSong.number }}</p>
+            <p class="description">{{ infoSong.description }}</p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <!-- best music -->
   <section id="best-music">
@@ -163,28 +166,46 @@ export default {
 }
 
 // info music
-.info-music {
-  background-image: url("./img/counter_parallax.jpg");
-  height: 350px;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: top;
-  @include flex;
+.img-info-music {
+  position: relative;
 
-  .col {
-    @include flex;
-    flex-direction: column;
-    gap: 10px;
-    img {
-      filter: brightness(0) invert(1);
-      height: 60px;
-    }
-    .title {
-      font-size: 40px;
+  .img-background {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .info-music {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+
+    .row {
+      display: flex;
+      justify-content: center;
     }
 
-    .description {
-      font-weight: bold;
+    .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        filter: brightness(0) invert(1);
+        height: 60px;
+      }
+
+      .title {
+        font-size: 40px;
+      }
+
+      .description {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -254,7 +275,6 @@ export default {
   // info music
   .info-music {
     .col {
-      @include flex;
       gap: 5px;
       .title {
         font-size: 20px;

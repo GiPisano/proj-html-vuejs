@@ -204,8 +204,8 @@ header {
 
   .close{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 20px;
     cursor: pointer;
     width: 30px;
     height: 30px;
