@@ -186,6 +186,8 @@ export default {
     .row {
       display: flex;
       justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .col {
